@@ -271,6 +271,8 @@ public class Main {
 //
 //        frame.setVisible(true);
 
+//    myFrame1  frame = new myFrame1();
 
+        new MyFrame();
     }
 }
