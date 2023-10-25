@@ -17,6 +17,6 @@ public class myPanel extends JPanel {
 //        g2d.drawOval(200,200,100,100);
 //        g2d.fillOval(200,200,100,100);
 //        g2d.drawArc(200,200,100,100,0,90);
-        g2d.fillArc(200,200,100,100,0,90);
+        g2d.fillArc(200,200,100,100,0,360 );
     }
 }
