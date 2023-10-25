@@ -274,21 +274,35 @@ public class Main {
 //    myFrame1  frame = new myFrame1();
 
 //        new MyFrame();
-            Character[] charArr = {'h','e','l','l','o'};
-            String[] stringArr = {"Hello","guy"};
-            Integer[] intArr = {1,2,3,4,5};
-            Double[] doubleArr = {1.2,2.3,3.2};
+//            Character[] charArr = {'h','e','l','l','o'};
+//            String[] stringArr = {"Hello","guy"};
+//            Integer[] intArr = {1,2,3,4,5};
+//            Double[] doubleArr = {1.2,2.3,3.2};
+//
+//            display(charArr);
+//            display(stringArr);
+//            display(intArr);
+//            display(doubleArr);
 
-            display(charArr);
-            display(stringArr);
-            display(intArr);
-            display(doubleArr);
+
+//        MyIntegerClass myInt = new MyIntegerClass(123);
+//        MyStringClass myString =  new MyStringClass("Gay");
+
+        MyGenericClass <Integer>  myString = new MyGenericClass<>(123);
+        MyGenericClass <String> myInt =  new MyGenericClass<>("Gays!");
+
+        System.out.println(myString.getValue());
+        System.out.println(myInt.getValue());
+
+//
     }
 
-    public static <Thing> void display(Thing[] arr){
-        for (Thing x: arr){
-            System.out.print( x + " ");
-        }
-        System.out.println();
-    }
+//    public static <Thing> void display(Thing[] arr){
+//        for (Thing x: arr){
+//            System.out.print( x + " ");
+//        }
+//        System.out.println();
+//
+//
+//    }
 }
