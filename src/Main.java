@@ -296,23 +296,39 @@ public class Main {
 
 //
 
-        Timer timer = new Timer();
-        TimerTask task = new TimerTask() {
-            @Override
-            public void run() {
-                System.out.println("task was completed");
-            }
-        };
+//        Timer timer = new Timer();
+//        TimerTask task = new TimerTask() {
+//            @Override
+//            public void run() {
+//                System.out.println("task was completed");
+//                timer.cancel();
+//            }
+//        };
+//
+//        Calendar date = Calendar.getInstance();
+//        date.set(Calendar.YEAR,2023);
+//        date.set(Calendar.MONTH,Calendar.OCTOBER);
+//        date.set(Calendar.DAY_OF_MONTH,26);
+//        date.set(Calendar.HOUR_OF_DAY,11);
+//        date.set(Calendar.MINUTE,13);
+//        date.set(Calendar.SECOND,0);
+//        date.set(Calendar.MILLISECOND,0);
+//        timer.schedule(task, date.getTime());
 
-        Calendar date = Calendar.getInstance();
-        date.set(Calendar.YEAR,2023);
-        date.set(Calendar.MONTH,Calendar.OCTOBER);
-        date.set(Calendar.DAY_OF_MONTH,26);
-        date.set(Calendar.HOUR_OF_DAY,11);
-        date.set(Calendar.MINUTE,13);
-        date.set(Calendar.SECOND,0);
-        date.set(Calendar.MILLISECOND,0);
-        timer.schedule(task, date.getTime());
+
+//        System.out.println(Thread.activeCount());
+//
+//        System.out.println(Thread.currentThread().getName());
+//
+//        System.out.println(Thread.currentThread().getPriority());
+
+//        myThread thread1 = new myThread();
+//        thread1.start();
+//        System.out.println(thread1.isAlive());
+//        System.out.println(thread1.getName());
+//        thread1.setPriority(6);
+//        System.out.println(Thread.currentThread().getPriority());
+//        System.out.println(thread1.getPriority());
     }
 
 //    public static <Thing> void display(Thing[] arr){
