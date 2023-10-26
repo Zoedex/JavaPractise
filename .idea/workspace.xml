@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15a145e4-5b40-47e5-9033-f35ef47dca36" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MyGenericClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyIntegerClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyStringClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>

@@ -8,8 +8,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
+import java.util.Timer;
 
 
 public class Main {
@@ -288,13 +288,31 @@ public class Main {
 //        MyIntegerClass myInt = new MyIntegerClass(123);
 //        MyStringClass myString =  new MyStringClass("Gay");
 
-        MyGenericClass <Integer>  myString = new MyGenericClass<>(123);
-        MyGenericClass <String> myInt =  new MyGenericClass<>("Gays!");
-
-        System.out.println(myString.getValue());
-        System.out.println(myInt.getValue());
+//        MyGenericClass <Integer>  myString = new MyGenericClass<>(123);
+//        MyGenericClass <String> myInt =  new MyGenericClass<>("Gays!");
+//
+//        System.out.println(myString.getValue());
+//        System.out.println(myInt.getValue());
 
 //
+
+        Timer timer = new Timer();
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                System.out.println("task was completed");
+            }
+        };
+
+        Calendar date = Calendar.getInstance();
+        date.set(Calendar.YEAR,2023);
+        date.set(Calendar.MONTH,Calendar.OCTOBER);
+        date.set(Calendar.DAY_OF_MONTH,26);
+        date.set(Calendar.HOUR_OF_DAY,11);
+        date.set(Calendar.MINUTE,13);
+        date.set(Calendar.SECOND,0);
+        date.set(Calendar.MILLISECOND,0);
+        timer.schedule(task, date.getTime());
     }
 
 //    public static <Thing> void display(Thing[] arr){
